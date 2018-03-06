@@ -20,6 +20,6 @@ void Person::setPseudo()
 
 void Person::getOutput()
 {
-	output = name + "\""+ pseudo + "\"" +  surname;
+	output = name +  surname + "\""+ pseudo + "\"" ;
 	cout << output;
 }
