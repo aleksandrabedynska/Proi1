@@ -11,11 +11,13 @@ private:
 	string surname;
 	string pseudo;
 	string output;
+
 public:
 	void setName();
 	void setSurname();
 	void setPseudo();
+	void setOutput();
+	void changeLetter();
 	void getOutput();
-	
 
 };
