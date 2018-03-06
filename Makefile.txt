@@ -1,0 +1,14 @@
+CC=g++
+CFLAGS=-c -Wall
+
+output: main.o Person.o
+	$(CC) main.o Person.o -o output
+
+main.o: main.cpp
+	$(CC) $(CFLAGS) main.cpp
+Person.o: Person.cpp Person.h
+	$(CC) $(CFLAGS) Person.cpp
+
+clean: 
+	rm *.o output
+	
