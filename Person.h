@@ -19,5 +19,6 @@ public:
 	void setOutput();
 	void changeLetter();
 	void getOutput();
+	void reverseWord();
 
 };

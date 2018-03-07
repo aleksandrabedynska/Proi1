@@ -20,13 +20,14 @@ void Person::setPseudo()
 
 void Person::setOutput()
 {
-	output = name + "\"" + pseudo + "\"" + surname;
+	output = name + surname + "\"" + pseudo + "\"" ;
 }
 
 void Person::getOutput()
 {
 	cout << output;
 }
+
 
 void Person::changeLetter()
 {
@@ -38,3 +39,32 @@ void Person::changeLetter()
 			output[i] = 'z';
 	}
 }
+
+void Person::reverseWord()
+{
+	char temporaryLetter;
+	for (int i = 0; i < name.size() / 2; i++)
+	{
+		temporaryLetter = name[i];
+		name[i] = name[name.size() - 1-i];
+		name[name.size() - 1-i] = temporaryLetter;
+ 
+	}
+	for (int i = 0; i < surname.size() / 2; i++)
+	{
+		temporaryLetter = surname[i];
+		surname[i] = surname[surname.size() - 1-i];
+		surname[surname.size() - 1-i] = temporaryLetter;
+
+	}
+	for (int i = 0; i < pseudo.size() / 2; i++)
+	{
+		temporaryLetter = pseudo[i];
+		pseudo[i] = pseudo[pseudo.size() - 1-i];
+		pseudo[pseudo.size() - 1-i] = temporaryLetter;
+
+	}
+
+}
+
+
