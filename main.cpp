@@ -8,9 +8,10 @@ void main()
 	student.setName();
 	student.setSurname();
 	student.setPseudo();
-	student.reverseWord();
+	student.changeLetter();
+  student.reverseWord();
 	student.setOutput();
-	student.getOutput();
+  student.getOutput();
 
 	system("PAUSE");
 	return;

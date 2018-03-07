@@ -28,6 +28,18 @@ void Person::getOutput()
 	cout << output;
 }
 
+
+void Person::changeLetter()
+{
+	char letter;
+	for (int i = 0; i < output.size(); i++)
+	{
+		letter = output[i];
+		if (letter == 'a' || letter == 'A' || letter == 'e' || letter == 'E' || letter == 'i' || letter == 'I' || letter == 'o' || letter == 'O' || letter == 'y' || letter == 'Y')
+			output[i] = 'z';
+	}
+}
+
 void Person::reverseWord()
 {
 	char temporaryLetter;
@@ -54,4 +66,5 @@ void Person::reverseWord()
 	}
 
 }
+
 

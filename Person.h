@@ -17,6 +17,7 @@ public:
 	void setSurname();
 	void setPseudo();
 	void setOutput();
+	void changeLetter();
 	void getOutput();
 	void reverseWord();
 
