@@ -2,17 +2,15 @@
 
 
 
-void main()
+int main()
 {
 	Person student;
 	student.setName();
 	student.setSurname();
 	student.setPseudo();
-	student.changeLetter();
-  student.reverseWord();
+	student.reverseWord();
 	student.setOutput();
-  student.getOutput();
-
-	system("PAUSE");
-	return;
+	student.changeLetter();
+	student.getOutput();
+	return 0;
 }
