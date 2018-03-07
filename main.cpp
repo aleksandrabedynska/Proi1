@@ -8,6 +8,8 @@ void main()
 	student.setName();
 	student.setSurname();
 	student.setPseudo();
+	student.reverseWord();
+	student.setOutput();
 	student.getOutput();
 
 	system("PAUSE");
